@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="./css/style.css" />
+    <link rel="styleSheet" href="./css/bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <script src="./css/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+
+    <title>Dashbord</title>
+
+
+</head>
+
+<body>
+
+
+    <header class="header">
+        <!-- menu and logo  -->
+        <section class="header__profile">
+            <div class="header__profile--logo">
+                <img class="pointer" src="images/Group 1684.png" />
+            </div>
+            <div class="header__profile--text hidden">
+                <!-- menu-responsive -->
+              
+                <div class="menu__response">
+                    <span class="hidden1">&#9776;</span>
+                    <span class="hidden2">&#9776;</span>
+                    <div class="responsive__menu">
+                        <li> 
+                     <a class="Dashbord_responsive"ng-href="#Dashbord_responsive">Dashbord</a>
+                     <a class="AllProjects_responsive" ng-href="#AllProjects_responsive">All Projects</a>
+                     <a class="Members_responsive" ng-href="#Members_responsive">Members</a>
+                     <a class="Stats_responsive" ng-href="#Stats_responsive">Stats</a>
+                     <a class="Help_responsive" ng-href="#Help_responsive">Help</a>
+                        </li>
+                    </div>
+                </div>
+                  
+                <!-- menu--asli -->
+                
+                <li class="
+                " id="hidden__li"> 
+                    
+                    <a id="Dashbord"href="#Dashbord">Dashbord</a>
+                    <a id="AllProjects" href="#AllProjects">All Projects</a>
+                    <a id="Members" href="#Members">Members</a>
+                    <a id="Stats" href="#Stats">Stats</a>
+                    <a id="Help" href="#Help">Help</a>
+                </li>
+            </div>
+        </section>
+        <!-- profile and name member -->
+     
+
+        <section class="header__menu">
+            <div class="header__menu-p">
+
+                <p> Diane Ward </p>
+                <p>Product Manager</p>
+            </div>
+              <img src="images/Ellipse 461.png" alt="profile" /> 
+              <span onclick="click__profile()" id="arrowprofile" class="arrow-profile">&#8964;</span> 
+              <span onclick="click__profile_close()" id="arrowprofiless" class="arrow-profile hidden_profiles">&#8964;</span> 
+            
+            </section>
+    </header>
+
+    <div class="profile__clicked" id="profile__clicked" onclick="profile__clicked()"></div>
+        <div class="profile__managment" id="profile__managment"> 
+
+
+        <div class="profile__managment--header"> </div>
+        <div class="profile__managment--footer"> 
+            <img class="profile__images" src="images/Ellipse 461.png" alt="profile" /> 
+            <p> Diane Ward </p>
+        
+            <form class="profile__form">
+                <input type="submit" value="profile"/>
+            </form>
+            
+            <p class="profile__texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam deserunt, beatae, eaque at, accusantium voluptas modi tenetur nobis quis voluptatibus blanditiis.</p>
+        </div>
+       
+    </div>
+
+
+ <main class="main">
+
+    <div class="main__calender">
+
+        <div class="Add__project">
+            <h3>Add project</h3>
+            <div class="Add__project--text">Create a new project on promanage calebrate our Directory to your location local projhect</div>
+            <div><span><img class="pointer" src="images/Group 1662.png" /> </span>CREARE NEW PROJECT</div>
+        </div>
+
+        <section class="team__member--box">
+
+        <div class="cart__green">
+            <div class="cart__green--images"><img src="./images/Image 111.png" /></div>
+            <div class="cart__green--teammembers color__green">Team Members</div>
+            <div class="cart__green--teammembers-images">
+                <span>  <img class="images" src="./images/1efd4332215ad8a812d6c47f45c73a6d.jpg" /></span> 
+                <span>  <img class="images" src="./images/team1.jpg" /></span> 
+                <span>  <img class="images" src="./images/best-online-dating-profile.jpg" /></span> 
+                <span>  <img class="images" src="./images/Chase-Stokes.jpg" /></span> 
+                <span>  <span>+5</span>
+            </div>
+            <div class="project__complated "><span class="spans1 colorse1">ProjectComplated</span><span id="show1">67%</span></div>
+
+            <!-- <div class="project__complated--range"><input id="myRange1" min="0" max="100" type="range" value="67" /></div> -->
+            <div class="project__complated--sliders"><span class="color1"></span></div>
+
+        </div>
+
+        <div class="cart__red">
+            <div class="cart__green--images"><img src="./images/Image 114.png" /></div>
+            <div class="cart__green--teammembers color__broun">Team Members</div>
+            <div class="cart__green--teammembers-images">
+                <span>  <img class="images" src="./images/Ellipse 461.png" /></span> 
+                <span>  <img class="images" src="./images/team1.jpg" /></span> 
+                <span>  <img class="images" src="./images/team1.jpg" /></span> 
+                <span>  <img class="images" src="./images/social-media-profile-photos-9.jpg" /></span> 
+                <span>+3</span>
+            </div>
+            <div class="project__complated"><span class="ProjectComplated">ProjectComplated</span><span id="show2">32%</span></div>
+            <!-- <div class="project__complated--range"><input id="myRange2" type="range" value="32"/></div> -->
+            <div class="project__complated--sliders"><span class="color2"></span></div>
+
+
+
+
+        </div>
+        <div class="cart__blue">
+            <div class="cart__green--images"><img src="./images/Group 1658.png" /></div>
+            <div class="cart__green--teammembers color__blue">Team Members</div>
+            <div class="cart__green--teammembers-images">
+                <span>  <img class="images" src="./images/1efd4332215ad8a812d6c47f45c73a6d.jpg" /></span> 
+                <span>  <img class="images" src="./images/social-media-profile-photos-9.jpg" /></span> 
+                <span>  <img class="images" src="./images/team1.jpg" /></span> 
+                <span>  <img class="images" src="./images/Ellipse 461.png" /></span> 
+                <span>+12</span>
+            </div>
+            <div class="project__complated"><span class="Complated">ProjectComplated</span><span id="show3">54%</span></div>
+            <!-- <div class="project__complated--range"><input id="myRange3" type="range" value="54"/></div> -->
+            <div class="project__complated--sliders"><span class="color3"></span></div>
+        </div>   
+    </section>
+
+
+<div class="table">
+
+    <table>
+    <tr class="table__firstline">
+     <div class="table__th">
+         <span class="table__RECENTPROJECT">RECENT PROJECT</span>
+         <span class="table__CREATED">CREATED</span>
+         <span class="table__REPORTER">REPORTER</span>
+         <span class="table__DUE">DUE</span>
+         <span class="table__">STATS</span>
+      </div>
+      
+ <!-- table center -->
+ 
+
+     <div class="table__tr">
+        <span> <img src="images/Image 111.png" />callabee private Co.</span>
+        <span>thu,26 oct</span>
+        <span>Chistine Matheds</span>
+        <span>thu,26 oct</span>
+        <span>
+            <input id="table__tr1" onclick="rowState(this)" class="color__table1" type="submit" value="open"> 
+        </span>   
+        
+     </div>
+
+
+     <div class="table__tr">
+        <span> <img src="images/Group 1657.png" />RECENT PROJECT</span>
+        <span onclick="rowState(this)">thu,26 oct</span>
+        <span>Arbore Coces</span>
+        <span>thu,26 oct</span>
+        <span >
+            <input id="table__tr1"  class="color__table2" type="submit" value="Progress"> 
+
+        </span>
+     </div>
+
+
+
+
+     <div class="table__tr">
+        <span> <img src="images/Mask Group 29.png" />RECENT PROJECT</span>
+        <span>thu,26 oct</span>
+        <span>Evelin Tucker</span>
+        <span>thu,26 oct</span>
+        <span >
+            <input id="table__tr1" onclick="rowState(this)" class="color__table1" type="submit" value="open"> 
+
+        </span>
+     </div>
+
+
+
+
+     <div class="table__tr">
+        <span> <img src="images/Image 128.png" />RECENT PROJECT</span>
+        <span>thu,26 oct</span>
+        <span>Donald Curis</span>
+        <span>thu,26 oct</span>
+        <span>
+            <input id="table__tr1" onclick="rowState(this)" class="color__table2" type="submit" value="Progress">
+
+        </span>
+     </div>
+     
+    </tr>
+</table>
+</div>
+
+
+
+
+
+<!-- project overview table right -->
+<div class="OverView__text">Project Overviw</div>
+
+      <div class="calender__border">
+          <div class="calender__border--montain">
+              <div class="calender__border--montain-text">
+                <span class="calender__border--MONTHLYstats">MONTHLY STATS</span>
+                <span class="calender__border--montain-number">64318 <span><img src="images/Polygon 12.png" /></span></span>
+              </div>
+
+
+              <div class="calender__border--montain-bottun">
+                 <input type="submit" class="bottun__calenders--monthly" value="Monthly">
+                 <input type="submit" class="bottun__calenders--weekly" value="Weekly">
+              </div>
+             <div class="chart__slide">
+                <img src="images/table_1.png" />
+
+             </div>
+          </div>
+
+
+
+          <div class="calender__border--weekly">
+             <div class="calender__border--weekly-text">
+                 <span>WEEKLY PROJECT WIEWS</span>
+                <div class="calender__border--weekly-number">401 <span><img src="images/Polygon 12.png" /></span></div>
+             </div>
+             <div class="chart__line">
+                <img src="images/table_2.png" />
+
+             </div>
+
+          </div>
+
+
+          
+          <div class="calender__border--pending">
+              <div class="calender__border--pending-task">
+                  <div class="calender__border--pending-task-text" >PENDING TASKS</div>
+                  <div class="number__tskes">36</div>
+              </div>
+              <div class="chart__images--squery">
+                  <img src="images/table_3.png" />
+              </div>
+              <div class="chart__color">
+                   <div>
+                    <div class="camber"><span></span>camber</div>
+                    <div class="Grammer"><span></span>Grammer</div>
+                   </div>
+                   <diV>
+                     <div class="Target"><span></span>Target</div>
+                     <div class="Collabee"><span></span>Collabee</div>
+                   </diV>
+                 
+              </div>
+          </div>
+    </div>
+       
+
+    </div>
+
+
+
+    
+    <section class="main__Dashbord">
+
+<div class="Dashbord__calender"> 
+    <div>calendar</div>
+    <div>Thursday,26 Oct</div>
+<!-- data calender -->
+<!-- 1 -->
+     <div class="calender__page">
+        <div class="calender__number">
+            <span>6</span>
+            <span>Am</span>
+        </div>
+        <div class="calender__data">
+            <div class="calender__data--up"></div>
+            <hr class="hr"/>
+            <div class="calender__data--down"></div>
+        </div>
+    </div>
+<!-- 2 -->
+    <div class="calender__page">
+        <div class="calender__number">
+            <span>7</span>
+            <span>Am</span>
+        </div>
+        <div class="calender__data">
+            <div class="calender__data--up"></div>
+            <hr class="hr"/>
+            <div class="calender__data--down"></div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="calender__page">
+        <div class="calender__number">
+            <span>8</span>
+            <span>Am</span>
+        </div>
+        <div class="calender__data">
+            <div class="calender__data--up"></div>
+            <hr class="hr"/>
+            <div class="calender__data--down"></div>
+        </div>
+    </div>
+    <!-- 4 -->
+    <div class="calender__page">
+        <div class="calender__number color__blue">
+            <span>9</span>
+            <span>Am</span>
+        </div>
+        <div class="calender__data">
+            <div class="calender__data--up background__blue">
+                sport in the cable dangers
+            </div>
+            <hr class="hr"/>
+            <div class="calender__data--down background__blue">
+                1 MIN
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="calender__page">
+        <div class="calender__number">
+            <span>10</span>
+            <span>Am</span>
+        </div>
+        <div class="calender__data">
+            <div class="calender__data--up"></div>
+            <hr class="hr"/>
+            <div class="calender__data--down"></div>
+        </div>
+    </div>
+<!-- 6 -->
+<div class="calender__page">
+    <div class="calender__number">
+        <span>11</span>
+        <span>Am</span>
+    </div>
+    <div class="calender__data">
+        <div class="calender__data--up"></div>
+        <hr class="hr"/>
+        <div class="calender__data--down"></div>
+    </div>
+</div>
+
+<!-- 7 -->
+<div class="calender__page">
+    <div class="calender__number color__red">
+        <span>12</span>
+        <span>Am</span>
+    </div>
+    <div class="calender__data">
+        <div class="calender__data--up background__red">
+            eating lunch
+        </div>
+        <hr class="hr"/>
+        <div class="calender__data--down background__red">
+            12:00 AM
+        </div>
+    </div>
+</div>
+
+
+<!-- 8 -->
+<div class="calender__page">
+    <div class="calender__number color__red">
+        <span>1</span>
+        <span>PM</span>
+    </div>
+    <div class="calender__data">
+        <div class="calender__data--up background__red">
+            play basketball
+        </div>
+        <hr class="hr"/>
+        <div class="calender__data--down background__red">
+            13:00
+        </div>
+    </div>
+</div>
+<!-- 9 -->
+<div class="calender__page">
+    <div class="calender__number color__red">
+        <span>2</span>
+        <span>PM</span>
+    </div>
+    <div class="calender__data">
+        <div class="calender__data--up background__red">
+            sleep in the school
+        </div>
+        <hr class="hr"/>
+        <div class="calender__data--down background__red">
+            14:10 PM
+        </div>
+    </div>
+</div>
+
+<!-- 10 -->
+<div class="calender__page">
+    <div class="calender__number">
+        <span>3</span>
+        <span>PM</span>
+    </div>
+    <div class="calender__data">
+        <div class="calender__data--up"></div>
+        <hr class="hr"/>
+        <div class="calender__data--down"></div>
+    </div>
+</div>
+
+<!-- 11 -->
+<div class="calender__page">
+    <div class="calender__number">
+        <span>4</span>
+        <span>PM</span>
+    </div>
+    <div class="calender__data">
+        <div class="calender__data--up"></div>
+        <hr class="hr"/>
+        <div class="calender__data--down"></div>
+    </div>
+</div>
+
+
+<!-- 12 -->
+<div class="calender__page">
+    <div class="calender__number color__green">
+        <span>5</span>
+        <span>PM</span>
+    </div>
+    <div class="calender__data">
+        <div class="calender__data--up background__green">
+            School in face
+        </div>
+        <hr class="hr"/>
+        <div class="calender__data--down background__green">
+            5:40 PM
+        </div>
+    </div>
+</div>
+
+
+<!-- 13 -->
+<div class="calender__page">
+    <div class="calender__number color__green">
+        <span>6</span>
+        <span>PM</span>
+    </div>
+    <div class="calender__data">
+        <div class="calender__data--up background__green">
+            calling the boos
+        </div>
+        <hr class="hr"/>
+        <div class="calender__data--down background__green">
+            6:10 PM
+        </div>
+    </div>
+</div>
+
+<!-- 14 -->
+<div class="calender__page">
+    <div class="calender__number">
+        <span>7</span>
+        <span>PM</span>
+    </div>
+    <div class="calender__data">
+        <div class="calender__data--up"></div>
+        <hr class="hr"/>
+        <div class="calender__data--down"></div>
+    </div>
+</div>
+
+
+</div>
+
+
+  
+
+        
+
+    </section>
+    
+
+  </main>
+
+
+
+
+
+
+</body>
+<script src="/home/iman/Documents/pro-asli/css/angular-1.8.2/angular.min.js"></script>
+<script src="./javascript/app.js"></script>
+<script src="./test.js"></script>
+
+</html>

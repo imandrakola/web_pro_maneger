@@ -1,0 +1,16 @@
+{
+"records" : [
+    {
+     "menu1" : "Dashboard" ,   
+     "menu2" : "All Project"   
+    }, 
+    {
+        "name" : "Alfreds Frunc" ,   
+        "name2" : "Alfreds Frunc"    
+    },
+    {
+        "name" : "Alfreds Frunc" ,   
+        "name2" : "Alfreds Frunc"   
+    }
+]
+}

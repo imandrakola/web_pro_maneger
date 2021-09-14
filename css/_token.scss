@@ -1,0 +1,36 @@
+
+$number_0:0;
+$flex:flex;
+
+$background:#2A3550 !important;
+$background__35:#35415E;
+$white:#fff;
+$red:#EC4E6E;
+$orange:#F2BC9E;
+$rebeccapurple:rebeccapurple;
+$green:#4A7745;
+$broun:#885A40;
+$blue:#3A7295;
+$blue_white:#92C7E8;
+$green_white:#1FC74C;
+$red_white:#C36338;
+$gary:#35415E;
+$black_orange:#ff9c462d;
+$orange_darck:#FF9C46;
+$gary_white:#627fff41;
+$rebeccapurple_darck:#6280FF;
+$reds:#FF3E9F;
+$white_color:#CEE8CA;
+$rebeccapurplewhite:#9574FF;
+$green_light:#569F87;
+$green_lights:#ffffff7a;
+$gold:#ffdb2d;
+
+
+@function pow($base, $exponent) {
+  $result: 1;
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}

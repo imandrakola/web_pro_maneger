@@ -1,0 +1,737 @@
+@import "token";
+@import "list";
+@import "responsive";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+body {
+  background-color: $background;
+
+  .header {
+    @include header__;
+
+    &__menu {
+      width: 20%;
+      height: 100%;
+      display: $flex;
+      justify-content: end;
+      padding: 0.6rem;
+      padding-right: 0.6rem;
+      padding-right: 3rem;
+
+      & > img {
+        width: 3rem;
+        height: 3rem;
+      }
+
+      &-p {
+        color: $green_lights;
+        text-align: right;
+        line-height: 0rem;
+        margin-top: 1rem;
+        margin-right: 0.8rem;
+        font-weight: bold;
+
+        & p:first-child {
+          color: $white;
+        }
+      }
+    }
+
+    li {
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+
+    &__profile {
+      width: 80%;
+      height: 100%;
+      display: $flex;
+
+      &--logo {
+        width: 10%;
+        height: 100%;
+        margin-top: 1.8rem;
+        margin-left: 3rem;
+      }
+
+      &--text {
+        width: 90%;
+        height: 100%;
+        display: $flex;
+        justify-content: flex-start;
+        justify-items: revert;
+
+        & > li {
+          display: $flex;
+          justify-content: flex-start;
+          justify-items: revert;
+          margin-top: 1.8rem;
+          margin-left: 3rem;
+          color: $white;
+          cursor: pointer;
+
+          a {
+            margin-right: 1rem;
+
+            &:hover {
+              border-bottom: 1px solid #ec4e6e;
+              color: #ec4e6e;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .arrow-profile {
+    @include arrow--profile;
+  }
+
+  .team__member--box {
+    @include team___member--box;
+  }
+
+  .main {
+    display: $flex;
+
+    &__Dashbord {
+      width: 20%;
+      height: 54.46rem;
+      display: $flex;
+    }
+
+    &__calender {
+      width: 80%;
+      height: 54.46rem;
+    }
+  }
+
+  .Add__project {
+    color: $white;
+    width: 21rem;
+    height: 10.1rem;
+    margin-top: 6rem;
+    margin-left: 5rem;
+    margin-right: 3rem;
+
+    &--text {
+      font-size: 10pt;
+      color: $green_lights;
+      margin-bottom: 1rem;
+    }
+    & > div {
+      display: $flex;
+      margin-top: 0.4rem;
+      line-height: 2rem;
+      color: $green_lights;
+      font-size: 10pt;
+      font-weight: bold;
+
+      & > span {
+        width: 2rem;
+        height: 2rem;
+        background: $red;
+        margin-right: 0.4rem;
+        display: $flex;
+        justify-content: center;
+        border-radius: 37rem;
+        align-items: center;
+
+        img {
+          width: 16px;
+        }
+      }
+    }
+  }
+
+  .cart__green {
+    width: 260px;
+    border-radius: 1rem;
+    height: 378px;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    background-color: $white_color;
+
+    &--images {
+      margin-top: 2rem;
+      margin-left: 2rem;
+    }
+    &--teammembers {
+      margin-top: 8rem;
+      margin-left: 1rem;
+      font-size: 11pt;
+      &-images {
+        width: 80%;
+        display: $flex;
+        justify-content: end;
+        margin-left: 2.4rem;
+
+        & > span {
+          width: 3rem;
+          height: 3rem;
+          background: aliceblue;
+          margin-top: 0.4rem;
+          border-radius: 2rem;
+          display: $flex;
+          margin-left: -1rem;
+          margin-bottom: 1rem;
+          padding: 0.7rem 0.8rem;
+        }
+      }
+      &-images > img {
+        margin-left: -2.1rem;
+      }
+    }
+  }
+
+  .images {
+    @include imagess;
+  }
+
+  .cart {
+    &__blue {
+      @include cart__blue;
+    }
+    &__red {
+      @include cart___red;
+    }
+  }
+
+  .project__complated {
+    margin-left: 1rem;
+    font-size: 8pt;
+
+    &--range {
+      display: $flex;
+      justify-content: center;
+      margin-top: 0.4rem;
+      & > input {
+        width: 13rem;
+      }
+      & > input[type="range"]::-moz-range-progress {
+        background-color: $rebeccapurple;
+      }
+    }
+    & .spans1 {
+      margin-right: 5rem;
+      margin-left: 1rem;
+      color: $green;
+    }
+    & .spans2 {
+      margin-right: 5rem;
+      margin-left: 1rem;
+      color: $green;
+    }
+    & .spans {
+      margin-right: 5rem;
+      margin-left: 1rem;
+      color: $green;
+    }
+  }
+  .color {
+    &__green {
+      color: $green;
+    }
+    &__broun {
+      color: $broun;
+    }
+    &__blue {
+      color: $blue;
+    }
+
+    &__table1 {
+      @include color___table1;
+    }
+    &__table2 {
+      @include color___table2;
+    }
+    &__red {
+      color: $reds;
+    }
+  }
+  .project {
+    &__complated {
+      .ProjectComplated {
+        margin-right: 5rem;
+        margin-left: 1rem;
+        color: $broun;
+      }
+
+      .Complated {
+        margin-right: 5rem;
+        margin-left: 1rem;
+        color: $blue;
+      }
+
+      &--sliders {
+        width: 80%;
+        height: 0.32rem;
+        background-color: #fff;
+        border-radius: 15rem;
+        margin: auto;
+        margin-top: 0.8rem;
+        display: flex;
+
+        & > .color1 {
+          width: 67%;
+          height: 0.32rem;
+          background: $green_white;
+          display: $flex;
+          border-radius: 10px;
+        }
+        & > .color2 {
+          width: 32%;
+          height: 0.32rem;
+          background: $red_white;
+          display: $flex;
+          border-radius: 10px;
+        }
+        & > .color3 {
+          width: 54%;
+          height: 0.32rem;
+          background: $rebeccapurple_darck;
+          display: $flex;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .Dashbord__calender {
+    width: 100%;
+    height: 3rem;
+    color: $white;
+
+    & > div:first-child {
+      color: #ffffff82;
+      margin-top: 2rem;
+    }
+  }
+
+  .displayflex {
+    display: $flex;
+  }
+
+  input[type="range"]::content {
+    content: 45;
+  }
+
+  /* table */
+  .table {
+    &__th {
+      width: 95%;
+      height: 3rem;
+      margin: auto;
+      margin-top: 2rem;
+      display: $flex;
+      align-content: space-around;
+      align-items: center;
+      padding-left: 7rem;
+      & > span {
+        padding-right: 8rem;
+        color: $green_lights;
+      }
+    }
+
+    &__tr {
+      width: 87.5%;
+      height: 3rem;
+      font-size: 9pt;
+      margin: auto;
+      margin-top: 1rem;
+      border-radius: 5px;
+      display: $flex;
+      align-content: space-around;
+      align-items: center;
+      padding-left: 3rem;
+      background-color: $gary;
+      box-shadow: 0px 0px 3px 1px;
+
+      & > span:last-child {
+        border: none;
+        border-radius: 5px;
+        width: 0rem;
+        height: 1.5rem;
+        display: $flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 6rem;
+        flex-wrap: nowrap;
+        text-align: center;
+        margin-right: 2rem;
+      }
+
+      & > span:first-child {
+        padding-right: 8rem;
+        color: $white;
+        text-align: left;
+        width: 100%;
+        justify-content: flex-start;
+        margin-right: -7rem;
+      }
+
+      & > span > img:first-child {
+        width: 3rem;
+      }
+
+      & > span:first-child {
+        padding-right: 8rem;
+        color: $white;
+        text-align: left;
+        width: 100%;
+        justify-content: flex-start;
+        margin-right: -7rem;
+      }
+
+      & > span {
+        color: $white;
+        width: 46%;
+        text-align: left;
+        margin-left: 1rem;
+        justify-content: flex-start;
+        padding-right: 6.5rem;
+      }
+    }
+  }
+
+  /* .colorblue{
+  color: #4b6bf7;
+  background-color: #627fff38;
+} */
+
+  .OverView__text {
+    @include OverView___text;
+  }
+
+  .calender {
+    &__page {
+      width: 100%;
+      height: auto;
+      display: $flex;
+      margin-top: 1rem;
+    }
+
+    &__data {
+      width: 80%;
+      height: 4rem;
+    }
+
+    &__number {
+      width: 20%;
+      height: 4rem;
+      display: $flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: space-around;
+      align-items: center;
+      justify-content: center;
+      color: $green_lights;
+    }
+    &__data--up {
+      width: 100%;
+      height: 50%;
+    }
+    &__data--down {
+      width: 100%;
+      height: 50%;
+    }
+  }
+
+  .hr {
+    height: 1px;
+    width: 92%;
+    margin: 0;
+  }
+
+  .background {
+    &__red {
+      background-color: $reds;
+      color: $gary;
+      padding-left: 1rem;
+      padding-top: 0.2rem;
+    }
+    &__blue {
+      background-color: $rebeccapurplewhite;
+      color: $gary;
+      padding-left: 1rem;
+      padding-top: 0.2rem;
+    }
+    &__green {
+      background-color: $green_white;
+      color: $gary;
+      padding-left: 1rem;
+      padding-top: 0.2rem;
+    }
+  }
+
+  .calender__number > span:last-child {
+    font-size: 9pt;
+  }
+
+  .form-check-input {
+    margin-left: 0.5rem;
+  }
+  .number__tskes {
+    margin-right: 3rem;
+    font-weight: bold;
+    font-size: 16pt;
+  }
+  .hidden_profiles {
+    display: none;
+  }
+  .profile__managment {
+    @include profile___managment;
+
+    &--header {
+      width: 100%;
+      height: 4.6rem;
+      background: $orange;
+      border-radius: 16px 0 0 0;
+    }
+    &--footer {
+      width: 100%;
+      height: 4.6rem;
+      text-align: center;
+      z-index: 2;
+    }
+  }
+  .profile__clicked {
+    @include profile___clicked;
+  }
+
+  .profile__images {
+    @include profile___images;
+  }
+  .profile__form > input {
+    width: 80%;
+    height: 2.8rem;
+    border-radius: 22px;
+    border: none;
+    background: $gold;
+    margin-top: 1rem;
+  }
+
+  .profile__texts {
+    @include profile___texts;
+  }
+
+  table {
+    @include table__;
+
+    &__RECENTPROJECT {
+      margin-left: -3rem;
+    }
+    &__CREATED {
+      margin-left: 1rem;
+    }
+    &__REPORTER {
+      margin-left: 1rem;
+    }
+    &__DUE {
+      margin-left: 2rem;
+    }
+    &__STATS {
+      margin-left: 3rem;
+    }
+  }
+
+  .calender__border {
+    width: 87%;
+    height: 21rem;
+    margin: auto;
+    display: $flex;
+
+    &--montain {
+      width: 38%;
+      height: 100%;
+      background: #35415e;
+      margin-right: 1rem;
+      box-shadow: 0px 0px 2px 0px;
+
+      &-bottun {
+        width: 40%;
+        height: 2.3rem;
+        float: right;
+        display: $flex;
+        margin: 1rem;
+        margin-top: 2rem;
+      }
+      &-number {
+        font-size: 15pt;
+        color: #ffffff;
+        font-weight: bold;
+      }
+
+      &-text {
+        width: 30%;
+        height: 5rem;
+        float: left;
+        text-align: center;
+        margin-top: 1.5rem;
+      }
+    }
+    &--MONTHLYstats {
+      font-size: 8pt;
+      color: #ffffff62;
+    }
+  }
+
+  .bottun__calenders--monthly {
+    width: 6rem;
+    font-size: 9pt;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    &:hover {
+      background: #9494f4;
+      color: $white;
+    }
+  }
+
+  .bottun__calenders--weekly {
+    width: 6rem;
+    font-size: 9pt;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    &:hover {
+      background: #9494f4;
+      color: $white;
+    }
+  }
+
+  .chart__slide {
+    width: 90%;
+    height: 62%;
+    margin: auto;
+    margin-top: 7rem;
+    & > img {
+      width: 23rem;
+      height: 12rem;
+    }
+  }
+
+  .calender__border--weekly {
+    @include calender___border---weekly;
+
+    &-text {
+      color: #ffffff69;
+      font-size: 10pt;
+    }
+
+    &-number {
+      font-size: 15pt;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+
+  .chart__line {
+    width: 90%;
+    height: 13rem;
+    margin-top: 5rem;
+    margin-left: -9rem;
+    & img {
+      width: 20.5rem;
+    }
+  }
+  .calender__border--pending {
+    width: 25%;
+    height: 100%;
+    background: #35415e;
+    margin-right: 1rem;
+    box-shadow: 0px 0px 2px 0px;
+    &-task {
+      width: 6rem;
+      height: 4rem;
+      margin-top: 2rem;
+      margin-left: 1rem;
+      text-align: center;
+      color: $white;
+      &:last-child {
+        font-weight: bold;
+      }
+      &-text {
+        font-size: 8pt;
+        color: #ffffff78 !important;
+        font-weight: unset !important;
+      }
+    }
+  }
+
+  .chart__images--squery {
+    margin-left: 3rem;
+    & > img {
+      width: 13rem;
+      margin-top: -1rem;
+    }
+  }
+
+  .chart__color {
+    @include chart___color;
+  }
+
+  .camber {
+    display: $flex;
+    line-height: 1rem;
+    padding-bottom: 1rem;
+    & > span {
+      width: 1rem;
+      height: 1rem;
+      background: #9fdfcd;
+      display: $flex;
+      border-radius: 5px;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .Grammer {
+    display: $flex;
+    line-height: 1rem;
+
+    & > span {
+      width: 1rem;
+      height: 1rem;
+      background: #d79ad7;
+      display: $flex;
+      border-radius: 5px;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .Target {
+    display: $flex;
+    line-height: 1rem;
+    padding-bottom: 1rem;
+    & > span {
+      width: 1rem;
+      height: 1rem;
+      background: #ffaab9;
+      display: $flex;
+      border-radius: 5px;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .Collabee {
+    display: $flex;
+    line-height: 1rem;
+    & > span {
+      width: 1rem;
+      height: 1rem;
+      background: #ada2ff;
+      display: $flex;
+      border-radius: 5px;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+}
